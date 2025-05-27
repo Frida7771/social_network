@@ -1,0 +1,22 @@
+{
+    "name": "social-network-mean-stack",
+    "version": "1.0.0",
+    "description": "A social network built with MEAN stack",
+    "main": "server/server.js",
+    "scripts": {
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd server && npm run dev",
+      "client": "cd client && ng serve",
+      "build": "cd client && ng build",
+      "start": "cd server && npm start",
+      "install-server": "cd server && npm install",
+      "install-client": "cd client && npm install",
+      "install-all": "npm run install-server && npm run install-client"
+    },
+    "keywords": ["social-network", "mean-stack", "angular", "nodejs", "mongodb"],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+      "concurrently": "^7.6.0"
+    }
+  }
